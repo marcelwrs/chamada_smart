@@ -9,7 +9,7 @@ import requests
 import json
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-o", "--output", type=str, default="d:/chamada2.0/records.csv", help="path to output CSV file containing barcodes")
+ap.add_argument("-o", "--output", type=str, default="./records.csv", help="path to output CSV file containing barcodes")
 ap.add_argument("-d", "--date", type=str, default="", help="set date and time (format=\"YYYY-MM-DD HH:MM:SS\") (default=now)")
 
 args = vars(ap.parse_args())
